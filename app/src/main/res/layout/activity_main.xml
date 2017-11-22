@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="51dp"
+        >
+
+        <liuhao.baway.com.monthlianxi.MyExpandListView
+            android:layout_above="@+id/relv"
+            android:id="@+id/expandlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></liuhao.baway.com.monthlianxi.MyExpandListView>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/relv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        >
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/select_checkbox"
+            android:focusable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/checkbox2"
+            android:gravity="center_vertical"
+            android:text="全选"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="合计 ："/>
+
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="0"
+                android:textColor="@android:color/holo_red_light"/>
+
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="结算(0)"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

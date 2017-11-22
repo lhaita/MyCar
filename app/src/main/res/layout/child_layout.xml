@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <CheckBox
+        android:id="@+id/cb_child"
+        android:layout_width="wrap_content"
+        android:focusable="false"
+        android:button="@drawable/select_checkbox"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/image_child"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/tv_child_title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="昵称"
+        android:layout_marginLeft="5dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+    <TextView
+        android:id="@+id/tv_child_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:textColor="#f00"
+        android:layout_marginLeft="5dp"/>
+</LinearLayout>
